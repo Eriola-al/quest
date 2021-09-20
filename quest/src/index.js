@@ -3,11 +3,9 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bulma/css/bulma.css';
+import { BrowserRouter } from 'react-router-dom';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render(<BrowserRouter> <App /> </BrowserRouter>,
   document.getElementById('root')
 );
 
