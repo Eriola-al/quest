@@ -5,13 +5,17 @@ import styles from './LandingPage.module.css';
 import { SearchBar } from '../SearchBar/SearchBar';
 import { SearchSuggestions } from './SearchSuggestions/SearchSuggestions';
 
-export function LandingPage(){
-    return(
-    <div>
-    <TopNav/>
-    <img src={logo} className={styles.logo} alt='logo'/>
-    <SearchBar/>
-    <SearchSuggestions/>
-    </div>
+export function LandingPage() {
+    return (
+        <div className = {styles.landing}>
+        <div> 
+         <TopNav />
+            <div className={styles['search-area']}>
+                <img src={logo} className={styles.logo} alt='logo' />
+                <SearchBar />
+                <SearchSuggestions />
+            </div>
+        </div>
+        </div>
     );
 }
