@@ -1,23 +1,24 @@
 import React from 'react';
 import styles from './SearchBar.module.css';
 
-export function SearchBar() {
+export function SearchBar(props) {
+    const sizeClass = props.small ? '' : 'is-medium';
     return (
         <div>
             <div className="field has-addons">
                 <p className="control"> 
-                    <button className="button is-static is-medium">Find</button>
+                    <button className={`button is-static ${sizeClass}`}>Find</button>
                 </p>
                 <p className="control">
-                    <input className={`input is-medium ${styles['input-control']}`} type="text" placeholder="takeout,plumbers,barbers..." />
+                    <input className={`input ${sizeClass} ${styles['input-control']}`} type="text" placeholder="takeout,plumbers,barbers..." />
                 </p>
                 <p className="control"> 
-                    <button className="button is-static is-medium">NEAR</button>
+                    <button className={`button is-static ${sizeClass}`}>NEAR</button>
                 </p>
                 <p className="control">
-                    <input className={`input is-medium ${styles['input-control']}`} type="text" placeholder="Where" />
+                    <input className={`input ${sizeClass} ${styles['input-control']}`} type="text" placeholder="Where" />
                 </p>
-                <div className={`button is-medium ${styles['search-button']}`}>
+                <div className={`button ${sizeClass} ${styles['search-button']}`}>
                     <span className={`icon is-small ${styles['search-icon']}`}><i className="fas fa-search"></i></span>
                 </div>
             </div>
