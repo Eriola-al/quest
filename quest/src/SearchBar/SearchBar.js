@@ -23,7 +23,7 @@ export function SearchBar(props) {
                 </div>
                 <p className="control">
                     <input className={`input ${sizeClass} ${styles['input-control']}`} 
-                    onChange = {(e) => setTerm(e.target.value)}
+                    onChange = {(e) => setTerm(e.target.value)} value={term}
                     type="text" placeholder="takeout,plumbers,barbers..." />
                 </p>
                 <div className="control"> 
@@ -31,7 +31,7 @@ export function SearchBar(props) {
                 </div>
                 <p className="control">
                     <input className={`input ${sizeClass} ${styles['input-control']}`} 
-                    onChange = {(e) => setLocation(e.target.value)}
+                    onChange = {(e) => setLocation(e.target.value)} value={location}
                     type="text" placeholder="Where" />
                 </p>
                 <div className={`button ${sizeClass} ${styles['search-button']}`} onClick = {submit}>
