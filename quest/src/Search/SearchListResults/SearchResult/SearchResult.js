@@ -9,7 +9,7 @@ export function SearchResult() {
             <div className={styles.businessInfo}>
                 <h2 className="subtitle">Best Burger</h2>
                 <BusinessRating />
-                <p>$$ <span class="tag">Fast Food</span> <span class="tag">Burgers</span></p>
+                <p>$$ <span className="tag">Fast Food</span> <span className="tag">Burgers</span></p>
             </div>
             <div className = {styles.businessAddress}>
                 <p>+4912345678</p><br/>
