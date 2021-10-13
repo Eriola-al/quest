@@ -1,9 +1,0 @@
-.search-list > * {
-    margin-top: 1rem;
-}
-
-.search-list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}

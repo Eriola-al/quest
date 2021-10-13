@@ -1,16 +1,15 @@
-.nav-bar{
+.nav-bar {
     display: flex;
-    background-color:rgb(209, 39, 39);
+    background: #d32323;
     padding: 1rem 0;
     align-items: center;
     justify-content: center;
 }
-
-.logo{
+.logo {
     width: 75px;
     margin-right: 1rem;
 }
 
-:global(.button).nav-button{
+:global(.button).nav-button {
     margin-left: 1rem;
 }

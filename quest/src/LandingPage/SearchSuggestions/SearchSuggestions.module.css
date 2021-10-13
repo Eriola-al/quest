@@ -1,9 +1,9 @@
-.suggestions{
-    display:flex;
+.suggestions {
+    display: flex;
     margin-top: 1rem;
 }
 
-.suggestion{
+.suggestion {
     font-size: .75rem;
     margin-left: 4px;
     margin-right: 2.5rem;
